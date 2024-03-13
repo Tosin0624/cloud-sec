@@ -29,8 +29,8 @@ resource "aws_iam_role_policy_attachment" "IAM_role_attachment" {
   policy_arn = aws_iam_policy.user_policy.arn
 }
 
-resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "my-s3-bucket"
+resource "aws_s3_bucket" "humber_cloudsec_s3_bucket" {
+  bucket = "breadagegeisbae-s3-koroba"
   acl    = "private"
 
   tags = {
